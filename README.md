@@ -4,7 +4,7 @@ A simple bookmarklet that functions as a UTF-8 string length &amp; byte counter.
 ## Installation
 Copy and paste the code below into the URL section of a new bookmark.
 ```javascript
-javascript:(s=>{s=prompt('UTF-8 Byte Counter'),alert(`That's ${s.length} characters, totaling ${new Blob([s]).size} UTF-8 bytes.`)})()
+javascript:{let s=prompt('UTF-8 Byte Counter');alert(`That's ${s.length} characters, totaling ${new Blob([s]).size} UTF-8 bytes.`)}
 ```
 
 ## Usage
