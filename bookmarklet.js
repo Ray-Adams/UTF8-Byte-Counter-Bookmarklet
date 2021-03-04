@@ -1,1 +1,1 @@
-javascript:{let s=prompt('UTF-8 Byte Counter');alert(`That's ${s.length} characters, totaling ${new Blob([s]).size} UTF-8 bytes.`)}
+javascript:(s=>alert(`That's ${s.length} characters, totaling ${new Blob([s]).size} UTF-8 bytes`))(prompt`UTF-8 Byte Counter`)
