@@ -1,10 +1,10 @@
 # UTF-8 Byte Counter Bookmarklet
-A simple bookmarklet that functions as a UTF-8 string length &amp; byte counter.
+A code-golf-oriented bookmarklet that functions as a UTF-8 string length &amp; byte counter.
 
 ## Installation
 Copy and paste the code below into the URL section of a new bookmark.
 ```javascript
-javascript:{let s=prompt('UTF-8 Byte Counter');alert(`That's ${s.length} characters, totaling ${new Blob([s]).size} UTF-8 bytes.`)}
+javascript:(s=>alert(`That's ${s.length} characters, totaling ${new Blob([s]).size} UTF-8 bytes`))(prompt`UTF-8 Byte Counter`)
 ```
 
 ## Usage
